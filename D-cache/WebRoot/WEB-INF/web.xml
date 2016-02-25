@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InitServlet</servlet-name>
+    <servlet-class>com.student.Util.InitServlet</servlet-class>
+    <init-param>
+      <param-name>config</param-name>
+      <param-value>/WEB-INF/config/system.properties</param-value>
+    </init-param>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>InitServlet</servlet-name>
+    <url-pattern>/initservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>RegisterAction</servlet-name>
+    <servlet-class>com.student.action.RegisterAction</servlet-class>
+  </servlet>
+   
+    <servlet>
+    <servlet-name>DeleteUserAction</servlet-name>
+    <servlet-class>com.student.action.DeleteUserAction</servlet-class>
+  </servlet>
+  <servlet>
+   
+    <servlet-name>LoginAction</servlet-name>
+    <servlet-class>com.student.action.LoginAction</servlet-class>
+  </servlet>
+  
+  <servlet>
+  
+  
+  <servlet-name>PivotAction</servlet-name>
+    <servlet-class>com.student.action.PivotAction</servlet-class>
+  </servlet>
+  
+   <servlet>
+  
+  
+  <servlet-name>PivotDataAction</servlet-name>
+    <servlet-class>com.student.action.PivotDataAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+    
+    <servlet-name>ChangePasswordAction</servlet-name>
+    <servlet-class>com.student.action.ChangePasswordAction</servlet-class>
+  </servlet>
+  <servlet>
+   <servlet-name>RecoverPasswordAction</servlet-name>
+    <servlet-class>com.student.action.RecoverPasswordAction</servlet-class>
+  </servlet>
+	
+	
+	<servlet>
+   <servlet-name>ChekUserAction</servlet-name>
+    <servlet-class>com.student.action.ChekUserAction</servlet-class>
+  </servlet>
+	
+	
+	<servlet>
+   <servlet-name>ViewUsersAction</servlet-name>
+    <servlet-class>com.student.action.ViewUsersAction</servlet-class>
+  </servlet>
+	
+	<servlet>
+   <servlet-name>LogoutAction</servlet-name>
+    <servlet-class>com.student.action.LogoutAction</servlet-class>
+  </servlet>
+  <servlet>
+   <servlet-name>UploadDataAction</servlet-name>
+    <servlet-class>com.student.action.UploadDataAction</servlet-class>
+  </servlet>
+   <servlet>
+   <servlet-name>UploadDataAction1</servlet-name>
+    <servlet-class>com.student.action.UploadDataAction1</servlet-class>
+  </servlet> <servlet>
+   <servlet-name>UploadDataAction2</servlet-name>
+    <servlet-class>com.student.action.UploadDataAction2</servlet-class>
+  </servlet>
+  <servlet>
+   <servlet-name>UploadDataAction3</servlet-name>
+    <servlet-class>com.student.action.UploadDataAction3</servlet-class>
+  </servlet> <servlet>
+   <servlet-name>UploadDataAction4</servlet-name>
+    <servlet-class>com.student.action.UploadDataAction4</servlet-class>
+  </servlet>
+  
+ <servlet>
+   <servlet-name>GetDataAction</servlet-name>
+    <servlet-class>com.student.action.GetDataAction</servlet-class>
+  </servlet>
+  
+ 
+  <servlet-mapping>
+	<servlet-name>ChangePasswordAction</servlet-name>
+	<url-pattern>/ChangePasswordAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>GetDataAction</servlet-name>
+	<url-pattern>/GetDataAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>UploadDataAction</servlet-name>
+	<url-pattern>/UploadDataAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	<servlet-name>UploadDataAction1</servlet-name>
+	<url-pattern>/UploadDataAction1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	<servlet-name>UploadDataAction2</servlet-name>
+	<url-pattern>/UploadDataAction2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	<servlet-name>UploadDataAction3</servlet-name>
+	<url-pattern>/UploadDataAction3</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	<servlet-name>UploadDataAction4</servlet-name>
+	<url-pattern>/UploadDataAction4</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>DeleteUserAction</servlet-name>
+	<url-pattern>/DeleteUserAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>RegisterAction</servlet-name>
+	<url-pattern>/RegisterAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>LoginAction</servlet-name>
+	<url-pattern>/LoginAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>PivotAction</servlet-name>
+	<url-pattern>/PivotAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>PivotDataAction</servlet-name>
+	<url-pattern>/PivotDataAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>LogoutAction</servlet-name>
+	<url-pattern>/LogoutAction</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet-mapping>
+	<servlet-name>ChekUserAction</servlet-name>
+	<url-pattern>/ChekUserAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>ViewUsersAction</servlet-name>
+	<url-pattern>/ViewUsersAction</url-pattern>
+	</servlet-mapping><!--
+  
+	
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadCloudDataAction</servlet-name>
+    <servlet-class>com.student.action.UploadCloudDataAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetCloudDataAction</servlet-name>
+    <servlet-class>com.cloud.Action.GetCloudDataAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PayAmountAction</servlet-name>
+    <servlet-class>com.cloud.Action.PayAmountAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DepisteAction</servlet-name>
+    <servlet-class>com.cloud.Action.DepisteAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetBalanceAction</servlet-name>
+    <servlet-class>com.cloud.Action.GetBalanceAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewSearchAction</servlet-name>
+    <servlet-class>com.cloud.Action.ViewSearchAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DepositeAction</servlet-name>
+    <servlet-class>com.cloud.Action.DepositeAction</servlet-class>
+  </servlet>-->
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RetreveImageIdAction</servlet-name>
+    <servlet-class>com.student.action.RetreveImageIdAction</servlet-class>
+  </servlet>
+
+
+<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchQueryAction</servlet-name>
+    <servlet-class>com.student.action.SearchQueryAction</servlet-class>
+  </servlet>
+
+<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchDcacheAction</servlet-name>
+    <servlet-class>com.student.action.SearchDcacheAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchIndexAction</servlet-name>
+    <servlet-class>com.student.action.SearchIndexAction</servlet-class>
+  </servlet>
+
+<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchMtreexAction</servlet-name>
+    <servlet-class>com.student.action.SearchMtreexAction</servlet-class>
+  </servlet>
+
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchGraph</servlet-name>
+    <servlet-class>com.student.action.SearchGraph</servlet-class>
+  </servlet>
+
+
+
+ <servlet-mapping>
+    <servlet-name>SearchGraph</servlet-name>
+    <url-pattern>/SearchGraph</url-pattern>
+  </servlet-mapping>
+  
+  
+<servlet-mapping>
+    <servlet-name>RecoverPasswordAction</servlet-name>
+    <url-pattern>/RecoverPasswordAction</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>SearchIndexAction</servlet-name>
+    <url-pattern>/SearchIndexAction</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>SearchDcacheAction</servlet-name>
+    <url-pattern>/SearchDcacheAction</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>SearchMtreexAction</servlet-name>
+    <url-pattern>/SearchMtreexAction</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>SearchQueryAction</servlet-name>
+    <url-pattern>/SearchQueryAction</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>RetreveImageIdAction</servlet-name>
+    <url-pattern>/RetreveImageIdAction</url-pattern>
+  </servlet-mapping>
+  
+ 
+  
+ 
+  <welcome-file-list>
+    <welcome-file>Home.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
